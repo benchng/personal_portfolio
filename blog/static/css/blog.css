@@ -1,0 +1,41 @@
+{% load staticfiles%}
+
+body {
+    background-color: darkgrey;
+    font-family: Cooper Hewitt;
+    font-size: 18px;
+    color: #ffffff
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+div.landscape {
+  height: auto;
+  max-width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  background: url(landscape.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+div.mountain {
+  height: auto;
+  max-width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+/* using fixed position allows us to precisely position an element in relation to the browser viewport   */
+  position: fixed;
+  top:  20px;
+  left: 20px;
+}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<header>
+      <div data-nc-container="top-left"> </div>
+      <a href="/" class="Mobile-bar-branding" data-nc-element="branding" data-content-field="site-title"> Ben Ng</a>
+
+      <div data-nc-container="top-right"></div>
+
+
+<a href="{% url 'blog:index' %}">HOME</a>
+
+
+<a href="{% url 'blog:blog_index' %}">Blog</a>
+
+</header>
+
+
+
+<img src="static/landscape.jpg" class="container">
+<img src="static/mountain.jpg" class="container">
+
+
+<!-- by adding a class atrribute to our sections, we can single them out and specifically style them up   -->
+<!-- <img src="media/mountain.jpg" alt="mountains">
+<img src="media/landscape.jpg" alt="landscape"> --!>
+{% endblock content %}
+
